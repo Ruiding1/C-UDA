@@ -66,7 +66,6 @@ python train.py
 
 ![show](show.jpg)
 
-___
 
 ### Acknowledgement
 

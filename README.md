@@ -1,6 +1,6 @@
 # C-UDA
 
-This is the official code of our paper "**C**ontrastive Single Domain Generalization via **U**nsupervised **D**iversity **A**ugmentation."
+This is the official code of our paper "Contrastive Single Domain Generalization via Unsupervised Diversity Augmentation."
 
 ___
 
@@ -24,18 +24,13 @@ unzip digits.zip
 cd ..
 ```
 
-
-### Train
+### Testing
 
 **※ Pretrained model**
 
-The model is available at this [link](https://pan.baidu.com/s/11rfaR-MA1BLejnHaCpQUTQ)[BaiDuYunDisk] and its extracted code:`n416`. Download and extract it in the `models_pth` directory.
+The pretrained task model for digits is available at this [link](https://pan.baidu.com/s/11rfaR-MA1BLejnHaCpQUTQ)[BaiDuYunDisk] and its extracted code:`n416`. Download and extract it in the `models_pth` directory.
 
-**※ Training the model**
-
-Coming soon.
-
-### Testing
+**※ Evaluating the model**
 
 In [train.py](https://github.com/Ruiding1/C-UDA/blob/main/train.py)
 
@@ -46,7 +41,6 @@ In [train.py](https://github.com/Ruiding1/C-UDA/blob/main/train.py)
 ```shell
 python train.py
 ```
-
 
 ### Results
 
@@ -64,13 +58,15 @@ python train.py
 | RC+AM    | 65.7     | 68.2     | 93.2     | 71.9     | 74.2   | 86.0     | 40.2     | 62.9     | 49.1     | 68.5     | 43.5     | 53.3     | 64.7 |
 | SagNet   | 67.1     | 56.8     | **95.7** | 72.1     | 69.2   | 85.7     | 41.1     | 62.9     | 46.2     | **69.8** | 35.1     | 40.7     | 61.9 |
 | ALT_G    | 63.5     | 63.8     | 94.9     | 68.9     | 74.4   | 84.6     | 39.7     | 61.1     | 49.3     | 68.8     | 43.4     | 50.8     | 63.6 |
-| Ours     | **69.7** | **74.5** | 92.9     | **74.9** | **75** | **87.5** | **55.6** | **66.2** | **52.4** | 68.0     | **51.1** | **70.7** | **69.9** |
+| Ours     | **69.7** | **74.5** | 92.9     | **74.9** | **75** | **87.5** | **55.6** | **66.2** | **52.4** | 68.0     | **51.1** | **70.7** | 69.9 |
 
 **※  Image Generation Results**
 
 >Compared to the original images (left),  Our method yields novel and diverse images.
 
-![show](show.jpg)
+![Show](D:\Users\Dro\Typro_Images\Show-1690531520740-4.jpg)
+
+___
 
 ### Acknowledgement
 

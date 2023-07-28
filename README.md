@@ -1,6 +1,6 @@
 # C-UDA
 
-This is the official code of our paper "Contrastive Single Domain Generalization via Unsupervised Diversity Augmentation."
+This is the official code of our paper "**C**ontrastive Single Domain Generalization via **U**nsupervised **D**iversity **A**ugmentation."
 
 ___
 

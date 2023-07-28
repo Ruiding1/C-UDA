@@ -24,7 +24,6 @@ unzip digits.zip
 cd ..
 ```
 
-___
 
 ### Train
 
@@ -48,7 +47,6 @@ In `train.py`:
 python train.py
 ```
 
-____
 
 ### Results
 
@@ -73,7 +71,6 @@ ____
 >Compared to the original images (left),  Our method yields novel and diverse images.
 
 ![show](show.jpg)
-___
 
 ### Acknowledgement
 

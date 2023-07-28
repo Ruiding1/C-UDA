@@ -12,7 +12,6 @@ ___
 - Torchvision 0.9.0
 - NVIDIA GPU + CUDA CuDNN
 
-____
 
 ### Dataset
 
@@ -26,7 +25,6 @@ unzip digits.zip
 cd ..
 ```
 
-___
 
 ### Train
 
@@ -37,8 +35,6 @@ The model is available at this [link](https://pan.baidu.com/s/11rfaR-MA1BLejnHaC
 ※ Training the model
 
 Coming soon.
-
-____
 
 ### Testing
 
@@ -52,7 +48,6 @@ In `train.py`:
 python train.py
 ```
 
-____
 
 ### Results
 
@@ -78,7 +73,6 @@ ____
 
 ![Show](D:\Users\Dro\Typro_Images\Show-1690531520740-4.jpg)
 
-___
 
 ### Acknowledgement
 

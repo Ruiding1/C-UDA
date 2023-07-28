@@ -72,8 +72,7 @@ ____
 
 >Compared to the original images (left),  Our method yields novel and diverse images.
 
-![Show](D:\Users\Dro\Typro_Images\Show-1690531520740-4.jpg)
-
+![show](show.jpg)
 ___
 
 ### Acknowledgement

@@ -12,7 +12,6 @@ ___
 - Torchvision 0.9.0
 - NVIDIA GPU + CUDA CuDNN
 
-
 ### Dataset
 
 **Note**: You need to download the data if you wish to train your own model.
@@ -25,14 +24,15 @@ unzip digits.zip
 cd ..
 ```
 
+___
 
 ### Train
 
-※ Pretrained model
+**※ Pretrained model**
 
 The model is available at this [link](https://pan.baidu.com/s/11rfaR-MA1BLejnHaCpQUTQ)[BaiDuYunDisk] and its extracted code:`n416`. Download and extract it in the `models_pth` directory.
 
-※ Training the model
+**※ Training the model**
 
 Coming soon.
 
@@ -48,10 +48,11 @@ In `train.py`:
 python train.py
 ```
 
+____
 
 ### Results
 
-※ Single domain generalization results on PACS
+**※ Single domain generalization results on PACS**
 
 > ResNet-18 is used for training.
 
@@ -67,12 +68,13 @@ python train.py
 | ALT_G    | 63.5     | 63.8     | 94.9     | 68.9     | 74.4   | 84.6     | 39.7     | 61.1     | 49.3     | 68.8     | 43.4     | 50.8     | 63.6 |
 | Ours     | **69.7** | **74.5** | 92.9     | **74.9** | **75** | **87.5** | **55.6** | **66.2** | **52.4** | 68.0     | **51.1** | **70.7** | 69.9 |
 
-※  Image Generation Results
+**※  Image Generation Results**
 
 >Compared to the original images (left),  Our method yields novel and diverse images.
 
 ![Show](D:\Users\Dro\Typro_Images\Show-1690531520740-4.jpg)
 
+___
 
 ### Acknowledgement
 

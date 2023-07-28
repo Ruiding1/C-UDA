@@ -37,7 +37,7 @@ Coming soon.
 
 ### Testing
 
-In [train.py](https://github.com/Ruiding1/C-UDA/blob/main/train.py):
+In [train.py](https://github.com/Ruiding1/C-UDA/blob/main/train.py)
 
 - Specify the output directory to save the results in  `--dir`.
 - Turn on the evaluation in `--eval`.

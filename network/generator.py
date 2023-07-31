@@ -5,7 +5,7 @@ import torch.nn.functional as F
 import numpy as np
 from network.rand_conv import MultiScaleRandConv2d_Ours
 
-class GLU(nn.Module):  # 类似relu的作用
+class GLU(nn.Module):   
 
     def __init__(self):
         super(GLU, self).__init__()
@@ -14,10 +14,7 @@ class GLU(nn.Module):  # 类似relu的作用
         nc = x.size(1)
         # print(f'x.shape = {x.shape} and nc = {nc}')
         assert nc % 2 == 0, 'channels dont divide 2!'
-
         nc = int(nc / 2)
-
-        # 在这里进行了 降维
         return x[:, :nc] * F.sigmoid(x[:, nc:])  # (0, 1）之间 #!! x.shape = 512 , x[:,:nc].shape = 216
 
 def sameBlock(in_planes, out_planes):
@@ -108,37 +105,16 @@ class AdaIN2d__Noise(nn.Module):
 
 class Generator_G(nn.Module):
     def __init__(self, n=3, w_noise=0.2, kernelsize=3, imdim=3, imsize=[192, 320]):
-        ''' w_ln 局部噪声权重
-        '''
-        super().__init__()
-        stride = (kernelsize - 1) // 2
-        self.zdim = zdim = 10
-        self.imdim = imdim
-        self.imsize = imsize
-        self.w = w_noise
-        kernel_size = [1, 3, 5, 7] # K
-        self.conv1 = MultiScaleRandConv2d_Ours(in_channels=3, out_channels=n, kernel_sizes=kernel_size, stride=1)
-        self.bn = nn.BatchNorm2d(n)
-        self.relu = nn.ReLU()
-        self.adain2_noise = AdaIN2d__Noise(zdim, n)
-        self.color= GET_IMAGE_Tanh1x1(n)
-
+   
     def forward(self, x):
-        ''' x '''
-        self.conv1.randomize() # RandConv
-        x = self.conv1(x)
-        x = self.relu(self.bn(x))
-        z1 = torch.randn(len(x), self.zdim).cuda()
-        x = self.adain2_noise(x, z1, self.w)
-        x_aug = self.color(x)
-
+      
         return x_aug
 
 
 
 class Generator_Phi(nn.Module):
     def __init__(self, n=16, kernelsize=3, imdim=3, imsize=[192, 320]):
-        ''' w_ln 局部噪声权重
+        '''  
         '''
         super().__init__()
         stride = (kernelsize - 1) // 2

@@ -15,7 +15,7 @@ class GLU(nn.Module):
         # print(f'x.shape = {x.shape} and nc = {nc}')
         assert nc % 2 == 0, 'channels dont divide 2!'
         nc = int(nc / 2)
-        return x[:, :nc] * F.sigmoid(x[:, nc:])  # (0, 1）之间 #!! x.shape = 512 , x[:,:nc].shape = 216
+        return x[:, :nc] * F.sigmoid(x[:, nc:])
 
 def sameBlock(in_planes, out_planes):
     block = nn.Sequential(conv3x3(in_planes, out_planes * 2),
